@@ -6,6 +6,19 @@ This project showcases foundational game development and software engineering co
 
 ---
 
+## Educational Developer Notes
+
+This repository contains heavily documented scripts and beginner-friendly developer notes for educational and portfolio purposes.
+
+Comments were intentionally expanded to:
+- explain gameplay systems
+- reinforce Unity and C# concepts
+- document programming logic
+- improve readability and maintainability
+- support long-term learning and review
+
+Because of this, the scripts are more heavily commented than a typical production game project.
+
 ## Gameplay Features
 
 - 2D character movement and interaction system
