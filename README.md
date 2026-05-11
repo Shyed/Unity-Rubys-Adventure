@@ -1,49 +1,111 @@
 # Ruby's Adventure
 
-**Ruby's Adventure** is a 2D Unity-based platformer game where players control a character named Ruby who navigates a world of hazards, collectibles, and enemies. The project serves as an educational introduction to Unity's 2D game development environment and includes core gameplay mechanics such as movement, health collection, enemy AI, and scene management.
+**Ruby's Adventure** is a 2D Unity-based platformer game where players control a character named Ruby who navigates a world filled with hazards, collectibles, enemies, and interactive objects. The project was originally developed as part of an educational Unity game development experience and demonstrates core gameplay systems using Unity and C#.
+
+This project showcases foundational game development and software engineering concepts including player movement, collision systems, health management, enemy AI behavior, object interaction, and scene management.
+
+---
 
 ## Gameplay Features
 
-- 2D character control with movement and interactions
-- Damage zones and health collectibles
-- Basic enemy AI and behavior
-- Object interactions (pick up and hold)
-- Scene-based level loading (`MainScene`, `SampleScene`)
-- Modular scripts for character, enemy, and environment mechanics
+- 2D character movement and interaction system
+- Health and damage mechanics
+- Enemy AI movement and collision behavior
+- Damage zones and healing collectibles
+- Object pickup and interaction systems
+- Scene-based level loading
+- Physics-based movement using Rigidbody2D
+- Modular gameplay scripting architecture
+
+---
+
+## Technologies Used
+
+- Unity Engine
+- C#
+- Visual Studio
+- Unity 2D Physics System
+
+---
 
 ## Project Structure
 
-```
+```text
 Assets/
-├── Art/             # Sprites and visuals
-├── Audio/           # Game audio files
-├── Demo/            # Possibly test scenes or UI demos
+├── Art/             # Sprites and visual assets
+├── Audio/           # Music and sound effects
+├── Demo/            # Demo or prototype content
 ├── Prefabs/         # Reusable game objects
-├── Scenes/          # Unity scene files (MainScene, SampleScene)
-├── Scripts/         # All C# game logic (e.g. RubyController.cs, EnemyController.cs)
+├── Scenes/          # Unity scenes (MainScene, SampleScene)
+├── Scripts/         # Main gameplay C# scripts
 ```
 
-## Scripts Included
+---
 
-- `RubyController.cs`: Main character logic (movement, animation, interaction)
-- `EnemyController.cs`: Enemy movement and damage logic
-- `HealthCollectible.cs`: Heals the player when collected
-- `DamageZone.cs`: Applies damage to player when entered
-- `PickUpAndHold.cs`: Handles object pickup mechanics
-- `TimedSelfDestruct.cs`: For timed destruction of objects (e.g. projectiles)
+## Script Location
 
-## Requirements
+All gameplay and logic scripts are located under:
 
-- **Unity Version:** 2019.4 or higher recommended
-- **Platform:** PC / Mac / Linux Standalone
+```text
+Assets/Scripts/
+```
 
-## Getting Started
+Example scripts include:
 
-1. Clone this repository.
-2. Open the project in Unity Hub.
-3. Open the `MainScene` from the `Scenes` folder.
-4. Press Play to begin testing the game.
+- `RubyController.cs`
+- `EnemyController.cs`
+- `HealthCollectible.cs`
+- `DamageZone.cs`
+- `PickUpAndHold.cs`
+- `TimedSelfDestruct.cs`
+
+---
+
+## Core Systems Implemented
+
+### Player Controller System
+- Physics-based movement using Rigidbody2D
+- Health and invincibility system
+- Keyboard input handling
+- Collision and interaction logic
+
+### Enemy System
+- Timed directional movement AI
+- Player collision damage
+- Physics-based movement behavior
+
+### Health & Collectible System
+- Healing item pickups
+- Environmental damage zones
+- Dynamic health management
+
+### Interaction System
+- Trigger-based interactions
+- Object pickup and hold mechanics
+- Scene object communication
+
+---
+
+## Software Engineering Concepts Demonstrated
+
+- Object-Oriented Programming (OOP)
+- Component-based architecture
+- State management
+- Event-driven systems
+- Collision detection
+- Physics systems
+- Modular scripting
+- Defensive programming
+- Scene management
+
+---
+
+## Project Purpose
+
+This project was created to strengthen understanding of Unity game development and C# programming fundamentals while building hands-on experience with gameplay systems, physics interactions, and modular game architecture.
+
+---
 
 ## Assets & Licensing
 
-This project may include open-source or educational Unity assets. Always verify licensing before reuse.
+This project may contain educational or open-source Unity assets used for learning purposes. Please verify asset licensing before commercial reuse.
